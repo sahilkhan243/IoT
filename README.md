@@ -53,7 +53,7 @@ This project implements a simple and cost-effective **Motion Detection System** 
 ---
 
 ## 📊 Flowchart
-![Flowchart](flowchart.png)
+![Flowchart](flowchart.jpg)
 
 ---
 
@@ -66,7 +66,8 @@ This project implements a simple and cost-effective **Motion Detection System** 
 ## 📤 Output
 - Red LED → Object detected / occupied  
 - Green LED → No object / empty  
-- Buzzer → Alert signal  
+- Buzzer → Alert signal
+![Output](output.jpg)
 
 ---
 
