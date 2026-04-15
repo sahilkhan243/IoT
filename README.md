@@ -53,7 +53,7 @@ This project implements a simple and cost-effective **Motion Detection System** 
 ---
 
 ## 📊 Flowchart
-![Flowchart](flowchart.jpg)
+![Flowchart](flowchart.png)
 
 ---
 
