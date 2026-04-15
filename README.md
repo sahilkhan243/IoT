@@ -1,79 +1,105 @@
-Overview
+# 🔍 Motion Detection System (IoT Project)
 
-This project is a motion detection system built using Arduino Uno and an ultrasonic sensor (HC-SR04). It detects the presence of an object based on distance and indicates the status using LEDs. The system provides real-time detection and is simple, cost-effective, and easy to implement.
+## 📌 Overview
+This project implements a simple and cost-effective **Motion Detection System** using Arduino. It detects human movement and provides real-time alerts using LEDs and a buzzer. The system is designed for basic security and automation applications.
 
-Components Used
-Arduino Uno
-HC-SR04 Ultrasonic Sensor
-Red LED
-Green LED
-220Ω Resistors
-Jumper Wires
-Breadboard
-Connections
-Ultrasonic Sensor:
-VCC → 5V
-GND → GND
-TRIG → Pin 9
-ECHO → Pin 10
-LEDs:
-Green LED → Pin 3 → Resistor → GND
-Red LED → Pin 4 → Resistor → GND
+---
 
+## 🎯 Objectives
+- Detect human motion using sensors  
+- Provide visual alert using LED  
+- Generate sound alert using buzzer  
+- Reduce manual monitoring  
+- Ensure low-cost and efficient system  
+- Enable future IoT integration  
 
-Code
-const int trigPin = 9;
-const int echoPin = 10;
-const int greenLED = 3;
-const int redLED = 4;
+---
 
-long duration;
-int distance;
+## ⚙️ Components Used
+- Arduino Uno  
+- PIR Sensor / Ultrasonic Sensor (HC-SR04)  
+- LED (Red & Green)  
+- Buzzer  
+- Breadboard  
+- Connecting Wires  
 
-void setup() {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  pinMode(greenLED, OUTPUT);
-  pinMode(redLED, OUTPUT);
-  Serial.begin(9600);
-}
+---
 
-void loop() {
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
+## 🧠 Working Principle
+- Sensor continuously monitors surroundings  
+- Detects motion / object presence  
+- Sends signal to Arduino  
+- Arduino processes input  
+- LED & buzzer activate based on detection  
 
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
+👉 If motion/object detected:
+- LED ON 🔴  
+- Buzzer ON 🔊  
 
-  duration = pulseIn(echoPin, HIGH);
-  distance = duration * 0.034 / 2;
+👉 If no motion:
+- LED OFF / Green ON 🟢  
 
-  if (distance > 0 && distance < 10) {
-    digitalWrite(redLED, HIGH);
-    digitalWrite(greenLED, LOW);
-  } else {
-    digitalWrite(redLED, LOW);
-    digitalWrite(greenLED, HIGH);
-  }
+---
 
-  delay(500);
-}
+## 🔄 Algorithm
+1. Start system  
+2. Initialize Arduino pins  
+3. Read sensor input  
+4. Check for motion/object  
+5. If detected → Turn ON LED & buzzer  
+6. Else → Turn OFF outputs  
+7. Repeat continuously  
 
+---
 
-How It Works
+## 📊 Flowchart
+![Flowchart](flowchart.png)
 
-The ultrasonic sensor measures the distance between the sensor and an object. If the object is within a set range, the system detects motion and turns ON the red LED. Otherwise, the green LED indicates no motion.
+---
 
-Features
-Real-time motion detection
-Simple and low-cost design
-Easy to build and understand
-LED-based indication system
-Expandable to IoT applications
+## 🧪 Input
+- Sensor detects motion / distance  
+- Sends signal to Arduino  
 
-Future Scope
-Add IoT for remote monitoring
-Use multiple sensors for larger areas
-Integrate mobile notifications
-Implement smart automation systems
+---
+
+## 📤 Output
+- Red LED → Object detected / occupied  
+- Green LED → No object / empty  
+- Buzzer → Alert signal  
+
+---
+
+## 🏁 Conclusion
+This project successfully demonstrates a **low-cost motion/parking detection system** using Arduino and sensors. It provides real-time detection and reduces manual monitoring. It is simple, efficient, and suitable for beginners.
+
+---
+
+## 🔮 Future Scope
+- IoT integration (mobile alerts)  
+- Multiple sensor support  
+- Smart parking system  
+- Wireless monitoring (WiFi/Bluetooth)  
+- LCD display integration  
+
+---
+
+## 📚 References
+- https://www.arduino.cc  
+- https://www.electronics-tutorials.ws  
+- HC-SR04 Datasheet  
+- IEEE Research Papers  
+
+---
+
+## 📄 Project Report
+👉 [Click here to view full PDF](IOT_CEP.pdf)
+
+---
+
+## 👨‍💻 Authors
+- Sahil Khan  
+- Jaswanth  
+
+Under the guidance of  
+**Ms. Baalne Anjali**
