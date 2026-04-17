@@ -1,106 +1,120 @@
-# 🔍 Motion Detection System (IoT Project)
+# Motion Detection System (IoT Project)
 
-## 📌 Overview
-This project implements a simple and cost-effective **Motion Detection System** using Arduino. It detects human movement and provides real-time alerts using LEDs and a buzzer. The system is designed for basic security and automation applications.
+## 1. Overview
 
----
-
-## 🎯 Objectives
-- Detect human motion using sensors  
-- Provide visual alert using LED  
-- Generate sound alert using buzzer  
-- Reduce manual monitoring  
-- Ensure low-cost and efficient system  
-- Enable future IoT integration  
+This project implements a motion detection system using Arduino. It detects human movement and provides real-time alerts using LED and buzzer. The system is simple, cost-effective, and suitable for basic security applications.
 
 ---
 
-## ⚙️ Components Used
-- Arduino Uno  
-- PIR Sensor / Ultrasonic Sensor (HC-SR04)  
-- LED (Red & Green)  
-- Buzzer  
-- Breadboard  
-- Connecting Wires  
+## 2. Objectives
+
+1. To design a motion detection system using Arduino Uno
+2. To detect human movement using sensors
+3. To provide visual indication using LED
+4. To generate alert using buzzer
+5. To reduce manual monitoring
+6. To ensure low-cost and efficient system
+7. To enable future IoT integration
 
 ---
 
-## 🧠 Working Principle
-- Sensor continuously monitors surroundings  
-- Detects motion / object presence  
-- Sends signal to Arduino  
-- Arduino processes input  
-- LED & buzzer activate based on detection  
+## 3. Components Used
 
-👉 If motion/object detected:
-- LED ON 🔴  
-- Buzzer ON 🔊  
-
-👉 If no motion:
-- LED OFF / Green ON 🟢  
+* Arduino Uno
+* PIR Sensor / Ultrasonic Sensor (HC-SR04)
+* LED (Red and Green)
+* Buzzer
+* Breadboard
+* Connecting wires
 
 ---
 
-## 🔄 Algorithm
-1. Start system  
-2. Initialize Arduino pins  
-3. Read sensor input  
-4. Check for motion/object  
-5. If detected → Turn ON LED & buzzer  
-6. Else → Turn OFF outputs  
-7. Repeat continuously  
+## 4. Working Principle
+
+The system continuously monitors the surroundings using a sensor. When motion or an object is detected, the sensor sends a signal to the Arduino. The Arduino processes this input and activates the output devices.
+
+If motion/object is detected:
+
+* LED turns ON
+* Buzzer activates
+
+If no motion is detected:
+
+* LED remains OFF or green LED indicates normal state
 
 ---
 
-## 📊 Flowchart
-![Flowchart](flowchart.png)
+## 5. Algorithm
+
+1. Start the system
+2. Initialize Arduino pins
+3. Read sensor input
+4. Check for motion or object detection
+5. If detected, turn ON LED and buzzer
+6. Else, turn OFF output devices
+7. Repeat continuously
 
 ---
 
-## 🧪 Input
-- Sensor detects motion / distance  
-- Sends signal to Arduino  
+## 6. Flowchart
+
+![Flowchart](flowchart.jpg)
 
 ---
 
-## 📤 Output
-- Red LED → Object detected / occupied  
-- Green LED → No object / empty  
-- Buzzer → Alert signal
+## 7. Input
+
+The input is provided by the sensor (PIR or ultrasonic), which detects motion or object presence and sends signals to the Arduino.
+
+---
+
+## 8. Output
+
+The output is displayed using LEDs and buzzer:
+
+* Red LED indicates detection
+* Green LED indicates no detection
+* Buzzer provides alert
+
 ![Output](output.jpg)
 
 ---
 
-## 🏁 Conclusion
-This project successfully demonstrates a **low-cost motion/parking detection system** using Arduino and sensors. It provides real-time detection and reduces manual monitoring. It is simple, efficient, and suitable for beginners.
+## 9. Conclusion
+
+The project demonstrates a simple and efficient motion detection system using Arduino and sensors. It reduces manual monitoring and provides real-time alerts. The system is low-cost and suitable for beginners.
 
 ---
 
-## 🔮 Future Scope
-- IoT integration (mobile alerts)  
-- Multiple sensor support  
-- Smart parking system  
-- Wireless monitoring (WiFi/Bluetooth)  
-- LCD display integration  
+## 10. Future Scope
+
+1. Integration with IoT for remote monitoring
+2. Support for multiple sensors
+3. Smart parking system implementation
+4. Wireless communication using WiFi or Bluetooth
+5. Display integration using LCD
 
 ---
 
-## 📚 References
-- https://www.arduino.cc  
-- https://www.electronics-tutorials.ws  
-- HC-SR04 Datasheet  
-- IEEE Research Papers  
+## 11. References
+
+1. https://www.arduino.cc
+2. https://www.electronics-tutorials.ws
+3. HC-SR04 Datasheet
+4. IEEE Research papers
 
 ---
 
-## 📄 Project Report
-👉 [Click here to view full PDF](IOT_CEP.pdf)
+## 12. Project Report
+
+[View Full PDF](IOT_CEP.pdf)
 
 ---
 
-## 👨‍💻 Authors
-- Sahil Khan  
-- Jaswanth  
+## 13. Authors
 
-Under the guidance of  
-**Ms. Baalne Anjali**
+* Sahil Khan
+* Jaswanth
+
+Guide:
+Ms. Baalne Anjali
