@@ -58,7 +58,7 @@ If no motion is detected:
 
 ## 6. Flowchart
 
-![Flowchart](flowchart.jpg)
+![Flowchart](flowchart.png)
 
 ---
 
